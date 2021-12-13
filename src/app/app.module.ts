@@ -1,14 +1,20 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgxWigModule } from 'ngx-wig';
 
 import { AppComponent } from './app.component';
+import { EditeurComponent } from './editeur/editeur.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EditeurComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    NgxWigModule
   ],
   providers: [],
   bootstrap: [AppComponent]
